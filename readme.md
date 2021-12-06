@@ -14,7 +14,7 @@ This simple addon lets you align the origin to the top, center or bottom of a me
 You can download the [latest realease](https://github.com/vanaf1979/Align-Origin/releases) and install it as any other Blender addon by going to Edit > Preferences > Addons and clicking the "install" button at the top of the dialog.
 
 #### Issues?
-If you experience any issues, or have an idea for improvement, please feel free to open a pull request of create a new issue.
+If you experience any issues, or have an idea for improvement, please feel free to open a pull request of create [a new issue](https://github.com/vanaf1979/Align-Origin/issues/new).
 
 #### Known issues!
 - Options don't hide correctly after object deselection.
