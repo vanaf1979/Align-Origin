@@ -57,8 +57,6 @@ class ST_OT_Origin_To_Base(bpy.types.Operator):
         if context.object is None or context.object.type not in {'MESH', 'CURVE'}:
             self.report({'ERROR'}, "No object selected")
             return {'FINISHED'}
-
-        bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='MEDIAN')
         
         old_curs_loc = mathutils.Vector(bpy.context.scene.cursor.location)
 
