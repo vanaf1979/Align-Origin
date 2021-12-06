@@ -18,5 +18,5 @@ If you experience any issues please feel free to open a pull request of create a
 - Plugin doenst gave build in updating. Maybe i'll add that int he future.
 
 #### Support
-If you like and enjoy this addond you can considder (buying me a coffee)[https://www.buymeacoffee.com/since1979]
+If you like and enjoy this addond you can considder [buying me a coffee)](https://www.buymeacoffee.com/since1979)
 
