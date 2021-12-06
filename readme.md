@@ -16,6 +16,9 @@ If you experience any issues, or have an idea for improvement, please feel free 
 #### Known issues!
 - Options don't hide correctly after object deselection.
 - Menu items should be part of the "Set Origin" submenu. But i have to figure out how to do that.
+
+#### Todo!
+- Add more axis to align on.
 - Plugin doenst gave build in updating. Maybe i'll add that int he future.
 
 #### Support
