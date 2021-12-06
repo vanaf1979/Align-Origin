@@ -2,7 +2,7 @@
 # Align Origin
 # ----------------------------------------------------------------------
 # Package             Align Origin
-# Version             0.0.1
+# Version             0.1.0
 # Description         Align origin to top, center or bottom of mesh
 # Author              Stephan Nijman <vanaf1979@gmail.com>
 # Author URI          https://since1979.dev
@@ -26,7 +26,7 @@ bl_info = {
     "author" : "Stephan Nijman",
     "description" : "Align origin to top, center or bottom of mesh.",
     "blender" : (3, 0, 0),
-    "version" : (0, 0, 1),
+    "version" : (0, 1, 0),
     "location" : "3DView",
     "warning" : "",
     "category" : "Object"
