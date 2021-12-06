@@ -11,7 +11,7 @@
 This simple addon lets you align the origin to the top, center or bottom of a mesh object by adding a submenu to the Object menu and to the Object context menu.
 
 #### Issues?
-If you acperience any issues please feel free to open a pull request of create a new issue.
+If you experience any issues please feel free to open a pull request of create a new issue.
 
 #### Known issues
 - Options don't hide correctly after object deselection.
