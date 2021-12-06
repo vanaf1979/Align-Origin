@@ -13,8 +13,9 @@ This simple addon lets you align the origin to the top, center or bottom of a me
 #### Issues?
 If you experience any issues please feel free to open a pull request of create a new issue.
 
-#### Known issues
+#### Known issues!
 - Options don't hide correctly after object deselection.
+- Menu items should be part of the "Set Origin" submenu. But i have to figure out how to do that.
 - Plugin doenst gave build in updating. Maybe i'll add that int he future.
 
 #### Support
