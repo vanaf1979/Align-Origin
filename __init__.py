@@ -22,14 +22,14 @@ import mathutils
 # REGISTER THIS ADDON
 # ----------------------------------------------------------------------
 bl_info = {
-    "name" : "ALIGN ORIGIN",
+    "name" : "Align origin",
     "author" : "Stephan Nijman",
     "description" : "Align origin to top, center or bottom of mesh.",
     "blender" : (3, 0, 0),
     "version" : (0, 2, 0),
     "location" : "3DView",
     "warning" : "",
-    "category" : "Object"
+    "category" : "Utils"
 }
 
 
