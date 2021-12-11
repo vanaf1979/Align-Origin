@@ -62,12 +62,21 @@ class ST_OT_Origin_To_Base(bpy.types.Operator):
 
         bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='MEDIAN')
         
+        
+        matrix_world = active.matrix_world
+        vertex_coordinates = [ matrix_world @ v.co for v in active.data.vertices ]
+        
         if self.location == 'bottom':
-            new_z = active.location.z - (active.dimensions.z / 2)
+            new_z = min( [ co.z for co in vertex_coordinates ] ) 
+            
         elif self.location == 'top':
-            new_z = active.location.z + (active.dimensions.z / 2)
+            new_z = max( [ co.z for co in vertex_coordinates ] ) 
+            
         else:
-            new_z = active.location.z
+            min_z = min( [ co.z for co in vertex_coordinates ] ) 
+            max_z = max( [ co.z for co in vertex_coordinates ] )
+            new_z = max_z + (min_z-max_z) / 2
+            
 
         context.scene.cursor.location = mathutils.Vector((active.location.x,active.location.y,new_z))
 
