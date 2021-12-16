@@ -1,3 +1,15 @@
+# Align Origin Blender Addon
+# Addon Name:          Align Origin
+# Description:         Align origin to top, center or bottom of mesh.
+# Plugin URI:          https://github.com/vanaf1979/Align-Origin
+# Version:             0.2.2
+# Requires at least:   3.0
+# Author:              Stephan Nijman
+# Author URI:          https://since1979.dev
+# License:             GPL v3 or later
+# License URI:         https://github.com/vanaf1979/Align-Origin/blob/master/LICENSE
+
+
 import bpy
 import mathutils
 
@@ -5,9 +17,9 @@ import mathutils
 bl_info = {
     "name" : "Align Origin",
     "author" : "Stephan Nijman",
-    "description" : "A collection of blender utilities",
+    "description" : "Align origin to top, center or bottom of mesh",
     "blender" : (3, 0, 0),
-    "version" : (0, 2, 1),
+    "version" : (0, 2, 2),
     "location" : "3DView",
     "warning" : "",
     "category" : "Generic"
@@ -34,11 +46,12 @@ class ST_OT_Origin_To_Base(bpy.types.Operator):
         subtype='XYZ'
     )
     
+
     @classmethod
     def poll(cls, context):
         return context.object is not None and context.object.type in {'MESH', 'CURVE'}
     
-    
+
     def execute(self, context):
 
         active = context.object
@@ -79,6 +92,7 @@ class ST_OT_Origin_To_Base(bpy.types.Operator):
         return {'FINISHED'}
 
 
+
 # ----------------------------------------------------------------------
 # CREATE THE 3DVIEW OBJECT CONTEXT SUBMENU
 # ----------------------------------------------------------------------
@@ -95,6 +109,7 @@ class ST_MT_Align_Origin(bpy.types.Menu):
         curs_bt.location = 'bottom'
 
 
+
 # ----------------------------------------------------------------------
 # ADD SUBMENU TO 3DVIEW OBJECT CONTEXT MENU
 # ----------------------------------------------------------------------
@@ -105,21 +120,21 @@ def align_origin_object_context_menu(self, context):
         self.layout.menu(ST_MT_Align_Origin.bl_idname)
 
 
-class AlignOriginsPreferences(bpy.types.AddonPreferences):
-    """Align origins addon preferences"""
-    bl_idname = __package__
 
-    def draw(self, context):
-        layout = self.layout
-        layout.label("Align origin preference text")
-        
-        
-        
+# ----------------------------------------------------------------------
+# ADD A PANEL TO THE PREFErENCES WINDOW
+# ----------------------------------------------------------------------
 class AlignOriginsPreferences(bpy.types.AddonPreferences):
     
     def draw(self, context):
         layout = self.layout
-        layout.label("Align origin preference text")
+        layout.label("This addon enables you to Align the object origin to the top, center or bottom of the mesh.")
+        layout.label("Right click on a mesh object and see the Align origin submenu")
+
+        layout.scale_y = 1.5
+        layout.operator("wm.url_open", text="Donate", icon = 'FUND').url = "https://stephannijman.gumroad.com/l/align-origin"
+        layout.operator("wm.url_open", text="Gitub", icon = 'TEXT').url = "https://github.com/vanaf1979/Align-Origin"
+
 
 
 # ----------------------------------------------------------------------
@@ -139,6 +154,7 @@ def unregister():
     bpy.types.VIEW3D_MT_object_context_menu.remove(align_origin_object_context_menu)
     bpy.types.VIEW3D_MT_object.remove(align_origin_object_context_menu)
     
+
 
 if __name__ == "__main__":
     register()
