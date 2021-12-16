@@ -125,15 +125,18 @@ def align_origin_object_context_menu(self, context):
 # ADD A PANEL TO THE PREFErENCES WINDOW
 # ----------------------------------------------------------------------
 class AlignOriginsPreferences(bpy.types.AddonPreferences):
+    bl_idname = __name__
     
     def draw(self, context):
         layout = self.layout
-        layout.label("This addon enables you to Align the object origin to the top, center or bottom of the mesh.")
-        layout.label("Right click on a mesh object and see the Align origin submenu")
+        wm = context.window_manager
+
+        layout.label(text = "This addon enables you to Align the object origin to the top, center or bottom of the mesh.")
+        layout.label(text = "Right click on a mesh object or open the Object menu and see the Align origin submenu")
 
         layout.scale_y = 1.5
         layout.operator("wm.url_open", text="Donate", icon = 'FUND').url = "https://stephannijman.gumroad.com/l/align-origin"
-        layout.operator("wm.url_open", text="Gitub", icon = 'TEXT').url = "https://github.com/vanaf1979/Align-Origin"
+        layout.operator("wm.url_open", text="Help", icon = 'HELP').url = "https://github.com/vanaf1979/Align-Origin/issues"
 
 
 
