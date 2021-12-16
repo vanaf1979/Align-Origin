@@ -2,7 +2,7 @@
 # Addon Name:          Align Origin
 # Description:         Align origin to top, center or bottom of mesh.
 # Plugin URI:          https://github.com/vanaf1979/Align-Origin
-# Version:             0.2.2
+# Version:             0.2.3
 # Requires at least:   3.0
 # Author:              Stephan Nijman
 # Author URI:          https://since1979.dev
@@ -19,7 +19,7 @@ bl_info = {
     "author" : "Stephan Nijman",
     "description" : "Align origin to top, center or bottom of mesh",
     "blender" : (3, 0, 0),
-    "version" : (0, 2, 2),
+    "version" : (0, 2, 3),
     "location" : "3DView",
     "warning" : "",
     "category" : "Generic"
