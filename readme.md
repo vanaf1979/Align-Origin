@@ -2,7 +2,7 @@
 ## Align Origin Blender Addon.
 
 <p align="center">
- <img src="https://i.postimg.cc/j54M8T2S/ezgif-4-c0decb37e1cb.gif">
+ <img src="https://i.postimg.cc/ZqV56yGQ/align-origin.gif">
 </p>
 
 ### Align Origin Blender Addon.
@@ -25,5 +25,5 @@ If you experience any issues, or have an idea for improvement, please feel free 
 - Plugin doenst have build in updating. Maybe i'll add that int he future.
 
 #### Support
-If you like and enjoy this addond you can considder [buying me a coffee](https://www.buymeacoffee.com/since1979)
+If you like and enjoy this addon you can considder [buying me a coffee](https://www.buymeacoffee.com/since1979)
 
