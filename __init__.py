@@ -135,7 +135,7 @@ class AlignOriginsPreferences(bpy.types.AddonPreferences):
         layout.label(text = "Right click on a mesh object or open the Object menu and see the Align origin submenu")
 
         layout.scale_y = 1.5
-        layout.operator("wm.url_open", text="Donate", icon = 'FUND').url = "https://stephannijman.gumroad.com/l/align-origin"
+        layout.operator("wm.url_open", text="Donate", icon = 'FUND').url = "https://www.buymeacoffee.com/since1979"
         layout.operator("wm.url_open", text="Help", icon = 'HELP').url = "https://github.com/vanaf1979/Align-Origin/issues"
 
 
